@@ -24,11 +24,32 @@ public class Lotto {
 		lottoGame();
 	}
 	
+	public void upTitle() {
+		System.out.println("=======LOTTO=======");
+	}
+	
+//	public void toPrint() {
+//		System.out.println(lottoArry[6] + " ");
+//	}
+	
+	public void downTitle () {
+		System.out.println("====================");
+	}
+	
+//	private void toPrint() {
+//		System.out.print(lottoArry + " ");
+//		System.out.println();
+//	}
+	
 	
 	public void lottoGame() {
+//		boolean run = true;
+//		while (run); {
+
 		Random random = new Random();
 		int game = gameCnt;  					//게임 수 구하기
 		for(int i =0; i<game; i++) {		//게임수 만큼 생성
+			
 			int []lottoArry = new int[6];
 			for(int j =0; j<lottoArry.length; j++) {
 				lottoArry[j] = random.nextInt(45)+1;
@@ -40,13 +61,15 @@ public class Lotto {
 			if(i % 5 ==0) {
 				upTitle();
 			}
-			toPrint(lottoArry);
+//			toPrint(lottoArry);
+			System.out.print(lottoArry[]+ " ");
+			System.out.println();
 		}
 		downTitle();
-			
-		}
+//		run = false;	
 	}
+}
 	
 	
 		
-}
+

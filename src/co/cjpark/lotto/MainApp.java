@@ -1,6 +1,7 @@
 package co.cjpark.lotto;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class MainApp {
@@ -16,7 +17,7 @@ public class MainApp {
 		lotto.setGameCnt(payMoney / 1000);
 		System.out.println("로또" + lotto.getGameCnt() + "회를 구입하셨습니다");
 		
-		lotto.run();
+		lotto.lottoGame();
 		
 	}
 	
