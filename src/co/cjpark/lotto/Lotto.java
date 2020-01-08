@@ -57,13 +57,16 @@ public class Lotto {
 					if(lottoArry[j] == lottoArry[k]) j--;
 				}
 			}
-			Arrays.sort(lottoArry);		//오름차순 정렬
+			Arrays.sort(lottoArry);				//오름차순 정렬
 			if(i % 5 ==0) {
 				upTitle();
 			}
-//			toPrint(lottoArry);
-			System.out.print(lottoArry[]+ " ");
+			for(int j = 0; j<lottoArry.length; j++) {
+				System.out.print(lottoArry[j]+ " ");
+			}
 			System.out.println();
+			
+//			toPrint();
 		}
 		downTitle();
 //		run = false;	
